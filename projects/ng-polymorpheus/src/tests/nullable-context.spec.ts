@@ -20,7 +20,6 @@ class ComponentContent {
     public readonly context = injectContext<Context>();
 }
 
-// Keep these components at module scope so ngc checks the nullable binding.
 @Component({
     imports: [PolymorpheusOutlet],
     template: '<ng-container *polymorpheusOutlet="content; context: context" />',
